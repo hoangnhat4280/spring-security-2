@@ -1,4 +1,9 @@
 package com.example.springsecurity2.service.role;
 
-public class IAppRoleService {
+import com.example.springsecurity2.model.AppRole;
+import com.example.springsecurity2.service.IGeneralService;
+
+
+public interface IAppRoleService extends IGeneralService<AppRole> {
+    AppRole findByName(String name);
 }
